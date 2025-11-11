@@ -5,7 +5,6 @@ import java.util.Date;
 
 import cn.alotus.core.date.SystemClock;
 import cn.alotus.core.lang.id.IdConstants;
-import cn.alotus.core.util.IdUtil;
 import cn.alotus.core.util.RandomUtil;
 import cn.alotus.core.util.StrUtil;
 
@@ -48,11 +47,9 @@ public class Snowflake implements Serializable {
 
 	private static final long WORKER_ID_BITS = 5L;
 	// 最大支持机器节点数0~31，一共32个
-	@SuppressWarnings({"PointlessBitwiseExpression", "FieldCanBeLocal"})
 	public static final long MAX_WORKER_ID = -1L ^ (-1L << WORKER_ID_BITS);
 	private static final long DATA_CENTER_ID_BITS = 5L;
 	// 最大支持数据中心节点数0~31，一共32个
-	@SuppressWarnings({"PointlessBitwiseExpression", "FieldCanBeLocal"})
 	public static final long MAX_DATA_CENTER_ID = -1L ^ (-1L << DATA_CENTER_ID_BITS);
 	// 序列号12位（表示只允许workId的范围为：0-4095）
 	private static final long SEQUENCE_BITS = 12L;

@@ -89,7 +89,7 @@ public class MapProxy implements Map<Object, Object>, OptNullBasicTypeFromObject
 		return map.remove(key);
 	}
 
-	@SuppressWarnings({"unchecked", "NullableProblems"})
+	@SuppressWarnings({"unchecked"})
 	@Override
 	public void putAll(Map<?, ?> m) {
 		map.putAll(m);
@@ -100,19 +100,19 @@ public class MapProxy implements Map<Object, Object>, OptNullBasicTypeFromObject
 		map.clear();
 	}
 
-	@SuppressWarnings({"unchecked", "NullableProblems"})
+	@SuppressWarnings({"unchecked"})
 	@Override
 	public Set<Object> keySet() {
 		return map.keySet();
 	}
 
-	@SuppressWarnings({"unchecked", "NullableProblems"})
+	@SuppressWarnings({"unchecked"})
 	@Override
 	public Collection<Object> values() {
 		return map.values();
 	}
 
-	@SuppressWarnings({"unchecked", "NullableProblems"})
+	@SuppressWarnings({"unchecked"})
 	@Override
 	public Set<Entry<Object, Object>> entrySet() {
 		return map.entrySet();

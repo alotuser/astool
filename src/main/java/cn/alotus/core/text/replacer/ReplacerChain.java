@@ -29,7 +29,6 @@ public class ReplacerChain extends StrReplacer implements Chain<StrReplacer, Rep
 		}
 	}
 
-	@SuppressWarnings("NullableProblems")
 	@Override
 	public Iterator<StrReplacer> iterator() {
 		return replacers.iterator();

@@ -115,6 +115,7 @@ public class UniqueKeySet<K, V> extends AbstractSet<V> implements Serializable {
 		return map.isEmpty();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean contains(Object o) {
 		//noinspection unchecked
@@ -151,6 +152,7 @@ public class UniqueKeySet<K, V> extends AbstractSet<V> implements Serializable {
 		return modified;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean remove(Object o) {
 		//noinspection unchecked

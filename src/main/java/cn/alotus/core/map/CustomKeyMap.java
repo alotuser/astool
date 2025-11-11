@@ -24,6 +24,7 @@ public abstract class CustomKeyMap<K, V> extends TransMap<K, V> {
 		super(emptyMap);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	protected V customValue(Object value) {
 		//noinspection unchecked

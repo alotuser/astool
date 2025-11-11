@@ -27,7 +27,7 @@ public class NoLock implements Lock{
 		return true;
 	}
 
-	@SuppressWarnings("NullableProblems")
+	
 	@Override
 	public boolean tryLock(long time, TimeUnit unit) {
 		return true;
@@ -37,7 +37,7 @@ public class NoLock implements Lock{
 	public void unlock() {
 	}
 
-	@SuppressWarnings("NullableProblems")
+	
 	@Override
 	public Condition newCondition() {
 		throw new UnsupportedOperationException("NoLock`s newCondition method is unsupported");

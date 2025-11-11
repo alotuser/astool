@@ -73,7 +73,7 @@ public interface Node<T> extends Comparable<Node<T>>, Serializable {
 	 */
 	Node<T> setWeight(Comparable<?> weight);
 
-	@SuppressWarnings({"unchecked", "rawtypes", "NullableProblems"})
+	@SuppressWarnings({"unchecked", "rawtypes"})
 	@Override
 	default int compareTo(Node node) {
 		if(null == node){

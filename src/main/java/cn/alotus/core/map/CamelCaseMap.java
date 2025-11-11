@@ -73,6 +73,7 @@ public class CamelCaseMap<K, V> extends FuncKeyMap<K, V> {
 	 *
 	 * @param emptyMapBuilder Map构造器，必须构造空的Map
 	 */
+	@SuppressWarnings("unchecked")
 	CamelCaseMap(MapBuilder<K, V> emptyMapBuilder) {
 		// issue#I5VRHW@Gitee 使Function可以被序列化
 		super(emptyMapBuilder.build(), (Function<Object, K> & Serializable)(key) -> {

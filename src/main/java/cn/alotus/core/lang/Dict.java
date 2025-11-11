@@ -212,6 +212,7 @@ public class Dict extends LinkedHashMap<String, Object> implements BasicTypeGett
 	 * @param isToCamelCase 是否转换为驼峰模式
 	 * @return Bean
 	 */
+	@SuppressWarnings("deprecation")
 	public <T> T toBean(T bean, boolean isToCamelCase) {
 		BeanUtil.fillBeanWithMap(this, bean, isToCamelCase, false);
 		return bean;
@@ -224,6 +225,7 @@ public class Dict extends LinkedHashMap<String, Object> implements BasicTypeGett
 	 * @param bean Bean
 	 * @return Bean
 	 */
+	@SuppressWarnings("deprecation")
 	public <T> T toBeanWithCamelCase(T bean) {
 		BeanUtil.fillBeanWithMap(this, bean, true, false);
 		return bean;

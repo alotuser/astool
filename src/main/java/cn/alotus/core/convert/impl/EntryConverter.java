@@ -13,6 +13,7 @@ import cn.alotus.core.util.ReflectUtil;
 import cn.alotus.core.util.StrUtil;
 import cn.alotus.core.util.TypeUtil;
 
+@SuppressWarnings("serial")
 public class EntryConverter extends AbstractConverter<Map.Entry<?, ?>> {
 
 	/** Pair类型 */

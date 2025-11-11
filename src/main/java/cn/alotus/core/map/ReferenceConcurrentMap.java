@@ -31,6 +31,7 @@ import cn.alotus.core.util.ReferenceUtil;
  * @author alotuser
  * @since 5.8.0
  */
+@SuppressWarnings("serial")
 public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterable<Map.Entry<K, V>>, Serializable {
 
 	final ConcurrentMap<Reference<K>, V> raw;
@@ -76,6 +77,7 @@ public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterab
 		return 0 == size();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public V get(Object key) {
 		this.purgeStaleKeys();
@@ -83,6 +85,7 @@ public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterab
 		return this.raw.get(ofKey((K) key, null));
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean containsKey(Object key) {
 		this.purgeStaleKeys();
@@ -154,6 +157,7 @@ public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterab
 		return computeIfAbsent(key, (keyParam) -> supplier.callWithRuntimeException());
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public V remove(Object key) {
 		this.purgeStaleKeys();
@@ -161,6 +165,7 @@ public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterab
 		return this.raw.remove(ofKey((K) key, null));
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean remove(Object key, Object value) {
 		this.purgeStaleKeys();
@@ -241,6 +246,7 @@ public class ReferenceConcurrentMap<K, V> implements ConcurrentMap<K, V>, Iterab
 	 * @param queue {@link ReferenceQueue}
 	 * @return {@link Reference}
 	 */
+	@SuppressWarnings("incomplete-switch")
 	private Reference<K> ofKey(K key, ReferenceQueue<? super K> queue) {
 		switch (keyType) {
 			case WEAK:

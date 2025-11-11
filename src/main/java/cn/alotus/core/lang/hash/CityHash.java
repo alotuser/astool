@@ -311,7 +311,6 @@ public class CityHash {
 		int d = fetch32(byteArray, (len >>> 1));
 		int e = fetch32(byteArray, 0);
 		int f = fetch32(byteArray, len - 4);
-		@SuppressWarnings("UnnecessaryLocalVariable")
 		int h = len;
 
 		return fmix(mur(f, mur(e, mur(d, mur(c, mur(b, mur(a, h)))))));

@@ -506,7 +506,6 @@ public class CollUtil {
 	 * @return 集合1中是否包含集合2中所有的元素
 	 * @since 4.5.12
 	 */
-	@SuppressWarnings("SuspiciousMethodCalls")
 	public static boolean containsAll(Collection<?> coll1, Collection<?> coll2) {
 		if (isEmpty(coll1)) {
 			return isEmpty(coll2);

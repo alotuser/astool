@@ -641,6 +641,7 @@ public class FastDateParser extends AbstractDateBasic implements DateParser {
 		private final Map<String, TzInfo> tzNames = new HashMap<>();
 
 		private static class TzInfo {
+			@SuppressWarnings("unused")
 			TimeZone zone;
 			int dstOffset;
 

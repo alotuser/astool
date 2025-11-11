@@ -37,6 +37,7 @@ public class FuncKeyMap<K, V> extends CustomKeyMap<K, V> {
 	 * @param key KEY
 	 * @return 驼峰Key
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	protected K customKey(Object key) {
 		if (null != this.keyFunc) {

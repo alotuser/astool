@@ -69,6 +69,7 @@ public abstract class AbsTable<R, C, V> implements Table<R, C, V> {
 			return new TransIter<>(cellSet().iterator(), Cell::getValue);
 		}
 
+		@SuppressWarnings("unchecked")
 		@Override
 		public boolean contains(Object o) {
 			//noinspection unchecked

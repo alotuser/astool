@@ -14,6 +14,7 @@ import cn.alotus.core.util.ReferenceUtil;
  * @author alotuser
  * @since 5.8.0
  */
+@SuppressWarnings("serial")
 public class WeakConcurrentMap<K, V> extends ReferenceConcurrentMap<K, V> {
 
 	/**

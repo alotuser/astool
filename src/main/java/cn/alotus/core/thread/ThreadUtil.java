@@ -607,7 +607,6 @@ public class ThreadUtil {
 	 * @param obj 对象所在线程
 	 * @since 4.5.6
 	 */
-	@SuppressWarnings("SynchronizationOnLocalVariableOrMethodParameter")
 	public static void sync(Object obj) {
 		synchronized (obj) {
 			try {
