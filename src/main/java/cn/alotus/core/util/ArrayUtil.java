@@ -446,7 +446,7 @@ public class ArrayUtil extends PrimitiveArrayUtil {
 	 * @return 新数组
 	 * @since 4.0.8
 	 */
-	@SuppressWarnings({"unchecked", "SuspiciousSystemArraycopy"})
+	@SuppressWarnings({"unchecked"})
 	public static <T> Object insert(Object array, int index, T... newElements) {
 		if (isEmpty(newElements)) {
 			return array;

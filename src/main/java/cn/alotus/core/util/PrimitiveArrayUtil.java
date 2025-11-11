@@ -1711,7 +1711,6 @@ public class PrimitiveArrayUtil {
 	 * @throws IllegalArgumentException 参数对象不为数组对象
 	 * @since 3.0.8
 	 */
-	@SuppressWarnings("SuspiciousSystemArraycopy")
 	public static Object remove(Object array, int index) throws IllegalArgumentException {
 		if (null == array) {
 			return null;

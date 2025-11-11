@@ -669,7 +669,6 @@ public class RandomUtil {
 	 * @return 随机的汉字字符
 	 * @since 5.7.15
 	 */
-	@SuppressWarnings("UnnecessaryUnicodeEscape")
 	public static char randomChinese() {
 		return (char) randomInt('\u4E00', '\u9FFF');
 	}
