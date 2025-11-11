@@ -39,7 +39,7 @@ public class IndexedComparator<T> implements Comparator<T> {
 	 * @param atEndIfMiss 如果不在列表中是否排在后边
 	 * @param map         参与排序的map，map中的value值大小决定了对象的排序先后
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unused" })
 	private IndexedComparator(boolean atEndIfMiss, Map<? super T, Integer> map) {
 		this.atEndIfMiss = atEndIfMiss;
 		this.map = map;

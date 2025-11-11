@@ -2,12 +2,9 @@ package cn.alotus.core.comparator;
 
 import java.io.Serializable;
 import java.util.Comparator;
-import java.util.List;
-import java.util.regex.Pattern;
 
-import cn.alotus.core.convert.Convert;
 import cn.alotus.core.lang.Version;
-import cn.alotus.core.util.*;
+import cn.alotus.core.util.ObjectUtil;
 
 /**
  * 版本比较器<br>

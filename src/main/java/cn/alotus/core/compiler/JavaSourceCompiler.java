@@ -260,6 +260,7 @@ public class JavaSourceCompiler {
 	 * @param sourceCodeMap 源码Map
 	 * @return Java文件对象集合
 	 */
+	@SuppressWarnings("unused")
 	private Collection<JavaFileObject> getJavaFileObjectByMap(final Map<String, String> sourceCodeMap) {
 		if (MapUtil.isNotEmpty(sourceCodeMap)) {
 			return sourceCodeMap.entrySet().stream()
@@ -275,6 +276,7 @@ public class JavaSourceCompiler {
 	 * @param file .java文件
 	 * @return Java文件对象
 	 */
+	@SuppressWarnings("unused")
 	private JavaFileObject getJavaFileObjectByJavaFile(final File file) {
 		return new JavaSourceFileObject(file.toURI());
 	}
