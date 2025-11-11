@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.alotuser</groupId>
   <artifactId>astool</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>astool</name>
   <description>一个小的Java工具类库</description>
   <url>https://github.com/alotuser/astool</url>
