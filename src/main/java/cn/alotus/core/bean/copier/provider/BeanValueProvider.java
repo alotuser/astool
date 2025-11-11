@@ -43,6 +43,7 @@ public class BeanValueProvider implements ValueProvider<String> {
 	 * @param ignoreError 是否忽略字段值读取错误
 	 * @param keyEditor   键编辑器
 	 */
+	@SuppressWarnings("unchecked")
 	public BeanValueProvider(Object bean, boolean ignoreCase, boolean ignoreError, Editor<String> keyEditor) {
 		this.source = bean;
 		this.ignoreError = ignoreError;

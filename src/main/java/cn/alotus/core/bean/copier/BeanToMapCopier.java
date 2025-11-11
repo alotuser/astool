@@ -34,6 +34,7 @@ public class BeanToMapCopier extends AbsCopier<Object, Map> {
 		this.targetType = targetType;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Map copy() {
 		Class<?> actualEditable = source.getClass();
