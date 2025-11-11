@@ -6,6 +6,7 @@ package cn.alotus.core.exceptions;
  * @author alotuser
  * @since 5.8.1
  */
+@SuppressWarnings("serial")
 public class InvocationTargetRuntimeException extends UtilException {
 
 	public InvocationTargetRuntimeException(Throwable e) {

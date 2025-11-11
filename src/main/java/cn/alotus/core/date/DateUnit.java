@@ -63,6 +63,7 @@ public enum DateUnit {
 	 * @return DateUnit，null表示不支持此单位
 	 * @since 5.4.5
 	 */
+	@SuppressWarnings("incomplete-switch")
 	public static DateUnit of(ChronoUnit unit) {
 		switch (unit) {
 			case MICROS:

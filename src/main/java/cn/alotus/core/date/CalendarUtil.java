@@ -314,7 +314,7 @@ public class CalendarUtil {
 	 * @return {@link Calendar}
 	 * @since 4.1.0
 	 */
-	@SuppressWarnings({"MagicConstant", "ConstantConditions"})
+	@SuppressWarnings({})
 	public static Calendar endOfQuarter(Calendar calendar) {
 		final int year = calendar.get(Calendar.YEAR);
 		final int month = calendar.get(DateField.MONTH.getValue()) / 3 * 3 + 2;

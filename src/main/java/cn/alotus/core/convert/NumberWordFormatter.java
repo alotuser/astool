@@ -1,6 +1,5 @@
 package cn.alotus.core.convert;
 
-import cn.alotus.core.lang.Console;
 import cn.alotus.core.util.NumberUtil;
 import cn.alotus.core.util.StrUtil;
 

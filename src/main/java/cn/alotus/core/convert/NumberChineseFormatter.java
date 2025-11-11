@@ -295,7 +295,6 @@ public class NumberChineseFormatter {
 	 * @param chineseMoneyAmount 中文大写数字金额
 	 * @return 返回结果以元为单位的BigDecimal类型数字
 	 */
-	@SuppressWarnings("ConstantConditions")
 	public static BigDecimal chineseMoneyToNumber(String chineseMoneyAmount){
 		if(StrUtil.isBlank(chineseMoneyAmount)){
 			return null;
